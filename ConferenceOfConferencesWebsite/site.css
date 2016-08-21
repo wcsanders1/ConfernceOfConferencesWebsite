@@ -1,0 +1,21 @@
+﻿.navbar .navbar-brand {
+  color: rgba(255,255,255,.85);
+  font-size: 1rem;
+  padding-top: .45rem;
+}
+
+.jumbotron {
+    background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%,rgba(255,255,255,.9) 100%), url("img/city-skyline-bw.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+
+#small-jumbotron-statement {
+    font-size: .8rem;
+    text-align: left;
+    padding: 10px 0 0 0;
+}
+
+.card-custom {
+    padding: 10px;
+
+}
