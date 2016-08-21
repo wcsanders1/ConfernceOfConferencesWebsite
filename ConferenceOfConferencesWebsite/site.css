@@ -19,3 +19,13 @@
     padding: 10px;
 
 }
+
+.btn,
+.active {
+  transition: .4s;
+}
+
+#about {
+    height: 50px;
+    margin-top: -50px;
+}

@@ -12,14 +12,13 @@
 
     <!-----------------NAVBAR---------------------------->
 
-    <nav class="navbar navbar-dark bg-inverse">
+    <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
         <div class="container">
             <div class="nav navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link" href="#">About</a>
-                <a class="navbar-brand pull-sm-right m-r-0 hidden-xs-down" href="#">Presented by International Conference of Conferences, LTD</a>
+                <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#schedule">Schedule</a>
+                <a class="navbar-brand pull-sm-right m-r-0 hidden-sm-down" href="#">Presented by International Conference of Conferences, LTD</a>
             </div>
         </div>
     </nav>
@@ -34,15 +33,16 @@
             <hr class="m-y-2">
             <div class="btn-group m-t-2" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register!</button>
-                <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
+                <a class="btn btn-secondary btn-lg" href="#speakers">See Who Won't Be There</a>
             </div>
         </div>
     </div>
 
     <!-----------------ABOUT---------------------------->
 
+    <div id="about"></div>
     <div class="container p-t-2">
-        <div id="about" class="row">
+        <div class="row">
             <div class="col-lg-4 push-lg-4">
                 <h3 class="m-b-2">About the Conference</h3>
                 <img class="m-b-1 img-fluid img-rounded hidden-xs-down" src="img/city-skyline-color.jpg" alt="New York">
@@ -67,10 +67,13 @@
         </div>
     </div>
 
+
+
     <!-----------------NON-SPEAKERS---------------------------->
 
+    <div id="speakers"></div>
     <div class="container">
-        <h1 class="display-4 text-xs-center m-y-3 text-muted" id="speakers">These People Will Not Be Attending the Conference</h1>
+        <h1 class="display-4 text-xs-center m-y-3 text-muted">These Individuals Will Not Be Attending the Conference</h1>
         <div class="card-deck-wrapper">
             <div class="card-deck">
                 <div class="card">
@@ -83,7 +86,7 @@
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/whale.jpg" alt="Whale">
                     <div class="card-block">
-                        <h4 class="card-title">Whale</h4>
+                        <h4 class="card-title">A Whale</h4>
                         <p class="card-text">Whales, because of their physical structure, would certainly suffer at any conference.</p>
                     </div>
                 </div>
@@ -104,13 +107,13 @@
                     <img class="card-img-top img-fluid" src="img/Fessbender_.jpg" alt="Isaac Fessbender">
                     <div class="card-block">
                         <h4 class="card-title">Isaac Fessbender</h4>
-                        <p class="card-text">Actually, Mr. Fessbender will be at this conference.</p>
+                        <p class="card-text">Actually, Mr. Fessbender will participate in this conference.</p>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/tennis-racket.png" alt="Tennis Racket">
                     <div class="card-block">
-                        <h4 class="card-title">Tennis Racket</h4>
+                        <h4 class="card-title">A Tennis Racket</h4>
                         <p class="card-text">This is an object rather than a sentient being. As such, it isn't conference material.</p>
                     </div>
                 </div>
@@ -118,7 +121,7 @@
                     <img class="card-img-top img-fluid" src="img/Gilda-Radner.jpg" alt="Gilda Radner">
                     <div class="card-block">
                         <h4 class="card-title">Gilda Radner</h4>
-                        <p class="card-text">Ms. Radner will not be at the conference.</p>
+                        <p class="card-text">For a multitude of reasons, Ms. Radner will not be at the conference.</p>
                     </div>
                 </div>
             </div>
@@ -126,8 +129,213 @@
     </div>
 
 
+    <!-----------------SCHEDULE---------------------------->
 
-                
+    <div id="schedule"></div>
+    <div class="container">
+        <h1 class="display-4 text-xs-center m-y-3 text-muted">Schedule</h1>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h4 class="list-group-item-heading">Pre-Conference Conference</h4>
+                <h4 class="list-group-item-heading">to Confer Regarding the Conference<span class="label tag-default tag-pill pull-xs-right">8:00am</span></h4>
+                Stubbs Piffle, D.O.
+            </li>
+            <li class="list-group-item list-group-item-warning">
+                <h4 class="list-group-item-heading">Lunch <span class="label tag-default tag-pill pull-xs-right">12:00pm</span></h4>
+                Cheese with sauce
+            </li>
+            <li class="list-group-item">
+                <h4 class="list-group-item-heading">Extreme Conferences <span class="label tag-default tag-pill pull-xs-right">2:00pm</span></h4>
+                Conferences on the edge
+            </li>
+            <li class="list-group-item">
+                <h4 class="list-group-item-heading">Conferences and Levity <span class="label tag-default tag-pill pull-xs-right">3:00pm</span></h4>
+                The lighter side of conferences
+            </li>
+        </ul>
 
+
+        <button type="button" class="btn btn-info btn-lg m-y-3 d-block m-x-auto" data-toggle="modal" data-target="#register">Don't miss any of it!</button>
+
+    </div>
+
+    <!-----------------SIGN-UP FORM---------------------------->
+
+    <div class="container">
+        <hr>
+        <div class="row p-y-2 text-muted">
+            <div class="col-md-6 col-xl-5">
+                <p><strong>About International Conference of Conferences ("ICC")</strong></p>
+                <p>When it comes to conferences, ICC is the world leader.</p>
+            </div>
+            <div class="col-md-6 col-xl-5 offset-xl-2">
+                <p><strong>Stay up-to-date on ICC</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Sign up</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-----------------FOOTER---------------------------->
+
+
+    <div class="container">
+        <div class="row p-y-1">
+            <div class="col-md-7">
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary">
+                        Upcoming Conference Conferences
+                    </button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <!-- Dropdown menu links -->
+                        <button class="dropdown-item" type="button">Pittsburgh</button>
+                        <button class="dropdown-item" type="button">California</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 text-md-right">
+                <small>&copy; 2016 International Conference of Conferences, LTD</small>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------FORM MODAL---------------------------->
+
+    <div id="register" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Registration</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        Hurry. The time to register will soon pass.
+                    </div>
+
+                    <form>
+                        <h5 class="m-b-2">Basic Information</h5>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="mail" class="form-control-label">Email</label>
+                            <input type="email" class="form-control" id="mail">
+                        </div>
+                        <fieldset class="form-group">
+                            <label for="role">Conferencing Level:</label>
+                            <select class="form-control c-select" id="role" name="user_role">
+                                <option value="full stack js developer">Advanced</option>
+                                <option value="front end developer">Mid-Level</option>
+                                <option value="back end developer">Novice</option>
+                            </select>
+                        </fieldset>
+
+                        <hr class="m-y-2">
+                        <h5 class="m-b-2">Which topics are you interested in?</h5>
+                        <div class="form-check d-block">
+                            <label class="form-check-label d-block">
+                                <input type="checkbox" class="form-check-input">
+                                Conference Conferences
+                            </label>
+                            <label class="form-check-label d-block">
+                                <input type="checkbox" class="form-check-input">
+                                Conference Conference Conferences (i.e., conferences about conferences about conferences)
+                            </label>
+                            <label class="form-check-label d-block">
+                                <input type="checkbox" class="form-check-input">
+                                Just Normal Conferences
+                            </label>
+                            <label class="form-check-label d-block">
+                                <input type="checkbox" class="form-check-input">
+                                Extreme Conferences
+                            </label>
+                            <label class="form-check-label d-block">
+                                <input type="checkbox" class="form-check-input">
+                                Extreme Conference Conferences
+                            </label>
+                        </div>
+
+                        <hr class="m-b-2">
+                        <h5 class-"m-b-2">Payment Info</h5>
+
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <label for="cc-num" class="pl-0">Card Number:</label>
+                                <input class="form-control" id="cc-num" type="text">
+                            </div>
+
+                            <div class="col-lg-3 form-group">
+                                <label for="zip">Zip Code:</label>
+                                <input class="form-control" id="zip" type="text">
+                            </div>
+
+                            <div class="col-lg-3 form-group">
+                                <label for="cvv">CVV:</label>
+                                <input class="form-control" id="cvv" type="text">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label class="col-lg-12">Expiration Date:</label>
+                            <div class="col-lg-8 form-group">
+                                <select class="c-select form-control" id="exp-month">
+                                    <option value="1">1 - January</option>
+                                    <option value="2">2 - February</option>
+                                    <option value="3">3 - March</option>
+                                    <option value="4">4 - April</option>
+                                    <option value="5">5 - May</option>
+                                    <option value="6">6 - June</option>
+                                    <option value="7">7 - July</option>
+                                    <option value="8">8 - August</option>
+                                    <option value="9">9 - September</option>
+                                    <option value="10">10 - October</option>
+                                    <option value="11">11 - November</option>
+                                    <option value="12">12 - December</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 form-group">
+                                <select class="c-select form-control" id="exp-year">
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr class="m-b-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                    </form>
+                    <!--        .registration form -->
+
+
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymsous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 </body>
 </html>
